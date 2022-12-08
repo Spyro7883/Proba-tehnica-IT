@@ -1,9 +1,9 @@
-.container {
-  padding: 0 2rem;
-}
+// .container {
+//   padding: 0 2rem;
+// }
 
-.main {
-  min-height: 75vh;
+.upper-main, .bottom-main,.center-main {
+  min-height: 80vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -11,15 +11,19 @@
   justify-content: center;
   align-items: center;
 }
+.center-main {
+  background-color: #6F3096;
+}
+
+
 
 .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
-  background-color: #6F3096;
+  background-color: #f0f0f0;
   justify-content: center;
-  height:75vh;
   align-items: center;
 }
 

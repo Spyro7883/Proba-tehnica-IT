@@ -1,0 +1,35 @@
+button.meme{
+    position: absolute;
+    width: 305px;
+    height: 65px;
+    color:white;
+    background: #6F3096;
+    border-radius: 5px;
+    left:222px;
+    margin-top:393px;
+    font-family: Merriweather;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+button.login, button.create-account{
+position: absolute;
+right: 4.17%;
+top:49px;
+
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 25px;
+border:none;
+background:none;
+
+color: #06114F;
+}
+button.login{
+    right:12%;
+}
