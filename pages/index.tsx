@@ -5,6 +5,9 @@ import MemeButton from '../components/MemeButton';
 import LogButtons from '../components/LogButtons';
 import SaltyImage from '../components/SaltyImage';
 import ImageUploader from '../components/ImageUploader';
+import MostViewed from '../components/MostViewed';
+import ViewedImages from '../components/ViewedImages';
+import CopyrightFooter from '../components/CopyrightFooter';
 
 export default function Home() {
   return (
@@ -19,19 +22,17 @@ export default function Home() {
       <main className="center-main">
         <ImageUploader />
       </main>
-      {/*<main className="bottom-main" />*/}
+      <main className="bottom-main">
+        <MostViewed />
+        <ViewedImages />
+      </main>
 
       <footer className="footer">
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className="logo">
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        <p style={{ backgroundColor: 'white' }}>Powered by </p>
+        <span className="logo">
+          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          {/*<CopyrightFooter/>*/}
+        </span>
       </footer>
     </div>
   );

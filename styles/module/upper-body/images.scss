@@ -24,3 +24,59 @@ background: #FFFFFF;
 box-shadow: 0px 10px 30px rgba(38, 50, 56, 0.5);
 border-radius: 21px;
   }
+
+.favorite-image-1 {
+    position: absolute;
+    width: 462px;
+    height: 424px;
+    left: 104px;
+    top: 1523px;
+}
+
+.favorite-image-2 {
+  position: absolute;
+  width: 462px;
+  height: 424px;
+  left: 723px;
+  top: 1523px;
+}  
+
+.favorite-image-3 {
+position: absolute;
+width: 472px;
+height: 424px;
+left: 1333px;
+top: 1523px;
+
+border-radius: 55px;
+}  
+
+.instagram-logo {
+  position: absolute;
+left: 46.39%;
+right: 3.61%;
+top: 2100px;
+bottom: 10%;
+
+background: blue;
+}
+
+.twitch-logo {
+  position: absolute;
+left: 36.39%;
+right: 3.61%;
+top: 2100px;
+bottom: 10%;
+
+background: red;
+}
+
+.facebook-logo {
+  position: absolute;
+left: 66.39%;
+right: 3.61%;
+top: 2100px;
+bottom: 10%;
+
+background: yellow;
+}
