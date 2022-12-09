@@ -1,26 +1,25 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import CentralHeader from '../components/CentralHeader';
 import TitleImage from '../components/TitleImage';
 import MemeButton from '../components/MemeButton';
 import LogButtons from '../components/LogButtons';
 import SaltyImage from '../components/SaltyImage';
+import ImageUploader from '../components/ImageUploader';
 
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <TitleImage />
-        <LogButtons />
-        <MemeButton />
-      </Head>
+      <TitleImage />
+      <LogButtons />
+      <MemeButton />
       <main className="upper-main">
         <CentralHeader />
-        <SaltyImage/>
+        <SaltyImage />
       </main>
-      <main className="center-main" />
-      <main className="bottom-main" />
-      
+      <main className="center-main">
+        <ImageUploader />
+      </main>
+      {/*<main className="bottom-main" />*/}
 
       <footer className="footer">
         <a

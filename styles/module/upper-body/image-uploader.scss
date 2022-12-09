@@ -1,0 +1,86 @@
+h1.h1-image{
+    position: absolute;
+width: 489px;
+height: 125px;
+left: 48px;
+top: 83px;
+
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 121.1%;
+/* or 39px */
+
+
+color: #252F65;
+}
+
+h2.h2-image{
+
+    position: absolute;
+    width: 373px;
+    height: 90px;
+    left: 48px;
+    top: 190px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 121.1%;
+    /* or 27px */
+    
+    
+    color: #252F65;
+}
+
+input.text-upload,input.meme-upload {
+box-sizing: border-box;
+position: absolute;
+width: 353.68px;
+height: 40.42px;
+left: 678.54px;
+top: 96.88px;
+    
+border: 1px solid #06114F;
+border-radius: 5px;
+text-indent: 10px;
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+}
+
+h1.description,h1.meme {
+position: absolute;
+width: 103.38px;
+height: 19.49px;
+left: 670.4px;
+top: 2px;
+
+font-family: 'Merriweather';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+
+color: #06114F;
+}
+
+input.meme-upload {
+    top:193px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 354.22px;
+    height: 150.84px;
+
+border: 1px solid #252F65;
+border-radius: 5px;
+}
+h1.meme {
+    top:156px;
+    width: 253.38px;
+    left: 680.4px;
+}
