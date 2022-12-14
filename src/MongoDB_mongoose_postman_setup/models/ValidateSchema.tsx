@@ -1,9 +1,8 @@
 import Joi, { ObjectSchema } from 'joi';
 import {NextFunction,Response,Request} from "express";
-import { schema } from '../../GraphQL_mySQL_setup/Schema';
 import { IUser } from './UserCreation';
 
-export const ValidateSchema = (scehma: ObjectSchema) =>{
+export const ValidateSchema = (schema: ObjectSchema) =>{
     return async (req:Request,res:Response,next:NextFunction)=>{
         try {
             await schema.validateAsync(req.body);
