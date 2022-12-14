@@ -28,11 +28,10 @@ export default function Home() {
       </main>
 
       <footer className="footer">
-        <p style={{ backgroundColor: 'white' }}>Powered by </p>
-        <span className="logo">
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          {/*<CopyrightFooter/>*/}
-        </span>
+        <p className="new-footer">
+          Copyright 2022 | La muncă, nu la întins mâna.
+        </p>
+        <span className="logo">{<CopyrightFooter />}</span>
       </footer>
     </div>
   );

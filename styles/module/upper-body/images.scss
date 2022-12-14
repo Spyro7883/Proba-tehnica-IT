@@ -53,30 +53,31 @@ border-radius: 55px;
 
 .instagram-logo {
   position: absolute;
-left: 46.39%;
+left: 47.7%;
 right: 3.61%;
-top: 2100px;
+top: calc(254%);
 bottom: 10%;
 
-background: blue;
+background: rgba(38, 50, 56, 0.7);
 }
 
 .twitch-logo {
   position: absolute;
-left: 36.39%;
+left: 49.39%;
 right: 3.61%;
-top: 2100px;
+top: calc(254.1%);
 bottom: 10%;
 
-background: red;
+background: rgba(38, 50, 56, 0.7);
+
 }
 
 .facebook-logo {
   position: absolute;
-left: 66.39%;
+left: 50.5%;
 right: 3.61%;
-top: 2100px;
+top: calc(254%);
 bottom: 10%;
 
-background: yellow;
+background: rgba(38, 50, 56, 0.7);
 }

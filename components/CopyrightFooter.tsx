@@ -1,4 +1,5 @@
 import * as React from 'react';
+// import "/styles/module/upperbody/footer.module.scss"
 
 import Image from 'next/image';
 import Instagram from '../public/images/instagram.png';
