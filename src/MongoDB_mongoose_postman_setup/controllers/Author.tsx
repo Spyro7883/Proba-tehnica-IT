@@ -5,6 +5,8 @@ import Author from '../models/UserCreation';
 const createAuthor = (req: Request, res: Response, next: NextFunction) => {
   const { username } = req.body;
   const { email } = req.body;
+  const saltRounds =10;
+  //bcrypt.hash(p)
   const { password } = req.body;
 
   const author = new Author({
