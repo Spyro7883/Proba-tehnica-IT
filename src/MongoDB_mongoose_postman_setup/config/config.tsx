@@ -19,4 +19,7 @@ export const config = {
   server: {
     port: SERVER_PORT,
   },
+  api:{
+    bodyParser:true,
+  }
 };

@@ -1,13 +1,15 @@
 import { NextFunction, Request, Response } from 'express';
 import mongoose from 'mongoose';
-import Author from '../models/Author';
+import Author from '../models/UserCreation';
 
 const createAuthor = (req: Request, res: Response, next: NextFunction) => {
-  const { name } = req.body;
+  const { username } = req.body;
+  const { email } = req.body;
+  const { password } = req.body;
 
   const author = new Author({
     _id: new mongoose.Types.ObjectId(),
-    name,
+    username,email,password
   });
   return author
     .save()

@@ -2,6 +2,8 @@ import express from "express";
 import controller from "../controllers/Author"
 
 const router =express.Router();
+router.use(express.urlencoded({extended: true}));
+router.use(express.json())
 
 router.post("/create",controller.createAuthor) ;
 router.get("/get/:authorId",controller.readAuthor) ;
