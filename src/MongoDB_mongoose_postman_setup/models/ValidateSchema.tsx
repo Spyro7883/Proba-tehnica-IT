@@ -1,5 +1,6 @@
 import Joi, { ObjectSchema } from 'joi';
 import {NextFunction,Response,Request} from "express";
+import { schema } from '../../GraphQL_mySQL_setup/Schema';
 import { IUser } from './UserCreation';
 
 export const ValidateSchema = (schema: ObjectSchema) =>{
