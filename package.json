@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write '**/*.{ts,tsx}'",
-    "ran": "ts-node --esm ./src/server.tsx",
+    "ran": "ts-node --esm ./src/GraphQL_mySQL_setup/index.tsx",
     "build express": "tsc",
     "script": "ts-node"
   },
