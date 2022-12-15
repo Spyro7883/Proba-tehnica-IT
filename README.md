@@ -1,6 +1,6 @@
-## IT Department: Tehnic Application
+## IT Department: Tehnic Application  :tada:
 
-# Setup
+# Setup :fire:
 
 Clone the repo and install the node_modules packages with:
 >- <value>**npm install** or **yarn**</value>
@@ -9,7 +9,26 @@ Change the file **.env.example** file with **.env** and update it with the value
 
 To check the website go and use **npm/yarn run dev**. 
 
-# How to run the project
+# Tasks :eyes:
+
+Frontend
+    
+1. Navbar :heavy_check_mark:
+2. Landing Page :heavy_check_mark:
+3. Login/Register :question:
+4. Image Uploader :heavy_check_mark:
+5. Footer :heavy_check_mark:
+6. Responsiveness :question:
+
+Backend
+    
+1. UserSchema :heavy_check_mark:
+2. CRUD :heavy_check_mark:
+3. Register & Login :question:
+4. Input Validation :question:
+6. Protected Endpoints :x:
+
+# How to run the project :zap:
 
 Change the code from ./MongoDB_mongoose_postman_setup/routes/Author.tsx :
 
@@ -43,7 +62,24 @@ And as you can see, the user has been created:
 
  <img src="./public/images/postman6.png">
 
-# Things that haven't been touched in the MEME_IT project
+# Things that haven't been touched in the MEME_IT project :cry:
+
+The question mark was used for tasks that have been partially completed, who deserve some explanations in this next section:
+
+    Login/Register
+
+Popup would look something like the ImageUploader component, but with the right tabs for username, email and password:
+
+ <img src="./public/images/popup_credentials.png">
+
+ To make the popup_credentials appear when the user clicks on the **login/create account** buttons, we would need to set up a useState component, that would bring the props.children up to the screen. The **loging/create account**  buttons would have:
+
+ >- <value> onChange={ () => { setState(true);
+ >- <value> props.setTrigger(true) } }
+
+ The popup-credentials would also have a **X** and send button that would close the popup and reset both the state and the props.setTrigger back to false.
+
+    Responsiveness
 
 The website should look something like this:
 
@@ -58,27 +94,11 @@ In case it doesn't look like that, it can be easily fixed with:
 
  Where 1024px is used for phone screens. This command should be added to the components that need size change (like images, header/main etc.) .
 
+    Register & Login 
+
  To upload a meme you would need to be signed in your account.The schema for meme would have a new addition called **memes**, that would store an array of memes into the database:
 
  <img src="./public/images/new_schema.png">
-
- Popup would look something like the ImageUploader component, but with the right tabs for username, email and password:
-
- <img src="./public/images/popup_credentials.png">
-
- To make the popup_credentials appear when the user clicks on the **login/create account** buttons, we would need to set up a useState component, that would bring the props.children up to the screen. The **loging/create account**  buttons would have:
-
- >- <value> onChange={ () => { setState(true);
- >- <value> props.setTrigger(true) } }
-
- The popup-credentials would also have a **X** and send button that would close the popup and reset both the state and the props.setTrigger back to false.
-
- To valitdate the received data, the application verifies using ValidateSchema with some regex specific to each user's input:
-
- Regex for email and password ( with more than 8 characters):
-
- >- <value>Email:^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$
- >- <value>Password: ^.{8,}$
 
  For password encryption we would import the bcrypt package and use the hash() function to encrypt our password:
 
@@ -98,7 +118,16 @@ To decode the jwt we would use the verify function:
 >- <value> try { const decoded = jwt.verify(token, secret); console.log(decoded); }
 >- <value> catch (error) { console.log(error.message); }
 
-# Extra features
+    Input Validation
+
+To validate the received data, the application verifies using ValidateSchema with some specific regex to each user's input:
+
+ Regex for email and password ( with more than 8 characters):
+
+ >- <value>Email:^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$
+ >- <value>Password: ^.{8,}$
+
+# Extra features :sparkles:
 
 1. Use yarn run format to format the whole code.
 
