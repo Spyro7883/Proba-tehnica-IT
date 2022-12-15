@@ -39,7 +39,7 @@ And as you can see, the user has been created:
 
  <img src="./public/images/postman5.png">
 
- And now the if you check the user with /get, you will notice that the user is gone:
+ And now if you check the user with /get, you will notice that the user is gone:
 
  <img src="./public/images/postman6.png">
 
